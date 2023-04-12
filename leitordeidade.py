@@ -1,12 +1,11 @@
-##leitor de situação eleitoral pela idade
+##leitor de condição eleitoral pela idade
 
-idade = int(input("Digite sua idade para saber sua situação eleitoral: "))
-
-if idade < 15:
-    print("Não eleitor")
-elif idade <= 17:
-    print("Eleitor facultativo")
-elif idade <= 64:
-    print("eleitor obrigatório")
-else:
-    print("eleitor facultativo")
+1 idade = int(input("Digite a sua idade: "))
+2 if idade < 16:
+3 categoria = 'não-eleitor'
+4 elif idade >= 18 and idade <= 65:
+5
+categoria = 'eleitor obrigatório'
+6 else:
+7 categoria = 'eleitor facultativo'
+8 print("Sua classe eleitoral é:", categoria)
